@@ -3,3 +3,12 @@ name = "my-template"
 description = "My custom template for Rust projects"
 authors = ["Medov Timur"]
 version = "0.1.0"
+
+[placeholders]
+project-name = { type = "string", prompt = "Project name" }
+
+[placeholders.project-name-snake-case]
+type = "string"
+prompt = "Project name (snake_case)"
+regex = "^[a-z][a-z0-9_]*$"
+default = { filter = { script = "to_snake_case", source = "project-name" } }
