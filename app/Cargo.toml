@@ -1,5 +1,5 @@
 [package]
-name = "{{project-name}}_app"
+name = "{{project-name-snake-case}}_app"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
