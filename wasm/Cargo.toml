@@ -5,9 +5,9 @@ edition.workspace = true
 license.workspace = true
 
 [dependencies]
-{{project-name}}_app = { path = "../app" }
+{{project-name-snake-case}}_app = { path = "../app" }
 
 [build-dependencies]
 gear-wasm-builder.workspace = true
 sails-idl-gen.workspace = true
-{{project-name}}_app = { path = "../app" }
+{{project-name-snake-case}}_app = { path = "../app" }
