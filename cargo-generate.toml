@@ -8,4 +8,4 @@ version = "0.1.0"
 type = "string"
 prompt = "Project name (snake_case)"
 regex = "^[a-z][a-z0-9_]*$"
-default = { filter = { script = "to_snake_case", source = "project-name" } }
+default = "{{ project-name | snake_case }}"
