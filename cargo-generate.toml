@@ -4,9 +4,6 @@ description = "My custom template for Rust projects"
 authors = ["Medov Timur"]
 version = "0.1.0"
 
-[placeholders]
-project-name = { type = "string", prompt = "Project name" }
-
 [placeholders.project-name-snake-case]
 type = "string"
 prompt = "Project name (snake_case)"
